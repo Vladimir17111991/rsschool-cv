@@ -71,6 +71,7 @@ p {
 /* about-me */
 
 .about-me {
+    position: relative;
     background: linear-gradient(var(--font-color-grey), rgba(14, 19, 14, 0.253));
     padding-top: 2.3%;
     padding-bottom: 2.3%;
@@ -97,4 +98,14 @@ p {
 .hobby-descr {
     max-width: 750px;
     padding-bottom: var(--font-size-24);
+}
+
+.about-me__avatar {
+    position: absolute;
+    max-width: 240px;
+    width: 100%;
+    border-radius: 50px;
+    top: 1%;
+    right: 7%;
+    bottom: 0;
 }
