@@ -1,0 +1,111 @@
+body {
+    box-sizing: border-box;
+}
+
+:root {
+    --font-color-black: #000;
+    --font-color-grey: #cacaca;
+    --font-color-light-pink: #e66465;
+    --font-size-24: 24px;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.list-reset {
+    list-style: none;
+}
+
+.container {
+    max-width: 1800px;
+    padding: 0 60px;
+    margin: 0 auto;
+    /* background-color: var(--font-color-grey); */
+}
+
+.title-h2 {
+    font-size: var(--font-size-24);
+    font-weight: 600;
+    line-height: 2em;
+    color: var(--font-color-light-pink);
+    margin-bottom: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2em;
+}
+
+.info {
+    margin-bottom: 20px;
+    padding-bottom: 1%;
+    border-bottom: 3px solid var(--font-color-black);
+}
+
+
+/* header */
+
+.header {
+    background: linear-gradient(var(--font-color-light-pink), #9198e5);
+}
+
+.header__title {
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    line-height: calc(74.4 / 64);
+}
+
+
+/* about-me */
+
+.about-me {
+    position: relative;
+    background: linear-gradient(var(--font-color-grey), rgba(14, 19, 14, 0.253));
+    padding-top: 2.3%;
+    padding-bottom: 2.3%;
+}
+
+.item-title {
+    margin-bottom: 5px;
+    color: chocolate;
+}
+
+.contacts-list {
+    align-items: center;
+}
+
+.contacts-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.education-descr,
+.work-descr {
+    font-style: italic;
+}
+
+.hobby-descr {
+    max-width: 750px;
+    padding-bottom: var(--font-size-24);
+}
+
+.about-me__avatar {
+    position: absolute;
+    max-width: 240px;
+    width: 100%;
+    border-radius: 50px;
+    top: 1%;
+    right: 7%;
+    bottom: 0;
+}
